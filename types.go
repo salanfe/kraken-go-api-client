@@ -525,12 +525,12 @@ type Order struct {
 	ExpireTime     float64          `json:"expiretm"`
 	Description    OrderDescription `json:"descr"`
 	Volume         string           `json:"vol"`
-	VolumeExecuted float64          `json:"vol_exec,string"`
-	Cost           float64          `json:"cost,string"`
-	Fee            float64          `json:"fee,string"`
-	Price          float64          `json:"price,string"`
-	StopPrice      float64          `json:"stopprice.string"`
-	LimitPrice     float64          `json:"limitprice,string"`
+	VolumeExecuted string           `json:"vol_exec"`
+	Cost           string           `json:"cost"`
+	Fee            string           `json:"fee"`
+	Price          string           `json:"price"`
+	StopPrice      string           `json:"stopprice"`
+	LimitPrice     string           `json:"limitprice"`
 	Misc           string           `json:"misc"`
 	OrderFlags     string           `json:"oflags"`
 	CloseTime      float64          `json:"closetm"`
